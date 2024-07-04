@@ -3,4 +3,5 @@
 '''
 
 name = "Hello there"
-print("The length of the variable name is:", len(name))
+length_of_name = len(name)
+print("The length of the variable name is:", length_of_name)
