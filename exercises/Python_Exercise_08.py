@@ -10,12 +10,15 @@ def guessing_game():
     stored_number = 5
     guess = int(input("Guess a number between 1 and 9: "))
 
-    if guess < stored_number:
-        print("Your guess is almost there")
-    elif guess > stored_number:
-        print("Your guess is higher")
+    if(guess>=1 and guess<=9):
+        if guess < stored_number:
+            print("Your guess is almost there")
+        elif guess > stored_number:
+            print("Your guess is higher")
+        else:
+            print("Your Guess Is Correct!")
     else:
-        print("Your Guess Is Correct!")
+        print("please enter number bwtween 1 to 9")
 
 # Example usage
 guessing_game()
